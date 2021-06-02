@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Language - Profile</title>
+</head>
+<body>
+	<header>
+  <div class="d-flex align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <img class="mb-1 mr-1" src="logo.png" alt="logo" width="165" height="70">
+        <h5 class="my-0 mr-md-auto font-weight-normal">LANGUAGE</h5>
+        <nav class="mx-auto">
+        <div class="btn-group" role="group">
+        <a class="btn btn-light p-2 text-info" href="index.html">HOME PAGE</a>
+        <a class="btn btn-light p-2 text-info" href="aboutus.html">ABOUT US</a>
+        <a class="btn btn-light p-2 text-info" href="profile.html">PROFILE</a>
+    </div>      
+        </nav>
+		<button class="btn btn-outline-primary" id="logout">Logout</button>
+    </div>
+	</header>
+					<div class="col-12 mt-5">
+						<h3 class=" my-0 mr-md-auto mb-5 font-weight-normal"> Your Profile</h3>
+					</div>
+        <div class="btn-group ml-3 mb-4" role="group">
+          <a class="btn btn-outline-success">Update</a>
+          <a class="btn btn-success">Load image</a>
+        </div>
+				<div class="table-responsive">
+    			<table class="table">
+    			<thead class="thead-dark">
+    			<tr>
+    				<th scope="col">First Name</th>
+    				<th scope="col">Second Name</th>
+            		<th scope="col">User name</th>
+    				<th scope="col">Mail</th>
+    			</tr>    					
+    			</thead>
+    			<tbody id="profile">
+    			</tbody>
+    			</table>
+    			</div>
+        <script async src="js/controllers/redirIfNotAuth.js"></script>
+        <script defer src="js/controllers/logout.js"></script>
+        <script defer type="module" src="js/controllers/profile.js"></script>
+</body>
+</html>

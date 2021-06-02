@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Language</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body class = "bg-light">
+		<header>
+
+	<div class="d-flex align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+	<img class="mb-1 mr-1" src="logo.png" alt="logo" width="165" height="70">
+      <h5 class="my-0 mr-md-auto font-weight-normal">LANGUAGE</h5>
+      
+      <nav class="mx-auto">
+      	<div class="btn-group" role="group">
+      	<a class="btn btn-light p-2 text-info" href="index.html">HOME PAGE</a>
+        <a class="btn btn-light p-2 text-info" href="aboutus.html">ABOUT US</a>
+        <a class="btn btn-light p-2 text-info" href="profile.html">PROFILE</a>
+		</div>      
+      </nav>
+  	  <button class="btn btn-outline-primary" id="logout">Logout</button>
+    </div>
+
+		</header>
+<h1 class="text-lg-center">Choose your language</h1>
+<div class="container-fluid" id="testBox">
+	<div class="row justify-content-around mt-2">
+			<div class="col-12 col-md-5 col-lg-4 mt-2">
+				<div class="card" style="width: 37rem;">
+  				<img class="card-img-top border-bottom" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/125px-Flag_of_Germany.svg.png" width="400" height="250">
+  					<div class="card-body text-lg-center">
+    					<h5 class="card-title">German</h5>
+    					<button class="btn btn-outline-success startTest" data-id="German">Start learning</button>
+  					</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-5 col-lg-4 mt-2">
+				<div class="card" style="width: 37rem;">
+  					<img class="card-img-top border-bottom" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png" width="400" height="250">
+  						<div class="card-body text-lg-center">
+    						<h5 class="card-title">English</h5>
+    						<button class="btn btn-outline-success startTest" data-id="English">Start learning</button>
+  						</div>
+				</div>
+		</div>
+		<div class="col-12 col-md-5 col-lg-4 mt-2">
+				<div class="card" style="width: 37rem;">
+  					<img class="card-img-top border-bottom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1920px-Flag_of_Italy.svg.png" width="400" height="250">
+  						<div class="card-body text-lg-center">
+    						<h5 class="card-title">Italian</h5>
+    						<button class="btn btn-outline-success startTest" data-id="Italian">Start learning</button>
+  						</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="row justify-content-start mt-5 mb-5">
+			<div class="col-12 col-md-5 col-lg-4 mt-2 mb-5">
+				<div class="card" style="width: 37rem;">
+  				<img class="card-img-top border-bottom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1920px-Flag_of_the_Czech_Republic.svg.png" width="400" height="250">
+  					<div class="card-body text-lg-center">
+    					<h5 class="card-title">Czech</h5>
+    					<button class="btn btn-outline-success startTest" data-id="Czech">Start learning</button>
+  					</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-5 col-lg-4 mt-2 mb-5">
+				<div class="card" style="width: 37rem;">
+  					<img class="card-img-top border-bottom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/800px-Flag_of_Armenia.svg.png"  width="400" height="250">
+  						<div class="card-body text-lg-center">
+    						<h5 class="card-title">Armenian</h5>
+    						<button class="btn btn-outline-success startTest" data-id="Armenian">Start learning</button>
+  						</div>
+				</div>
+		</div>
+		<div class="col-12 col-md-5 col-lg-4 mt-2 mb-5">
+				<div class="card" style="width: 37rem;">
+  					<img class="card-img-top border-bottom" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1920px-Flag_of_Japan.svg.png" width="400" height="250">
+  						<div class="card-body text-lg-center">
+    						<h5 class="card-title">Japanese</h5>
+    						<button class="btn btn-outline-success startTest" data-id="Japanese">Start learning</button>
+  						</div>
+				</div>
+		</div>
+	</div>
+
+		<footer class="mt-5 border-top">
+			<div class="row">
+				<div class="col-12 col-md">
+					<img class="mb-2" src="logo.png" alt="" width="100" height="40">
+				</div>
+				<div class ="col-6 col-md ">
+					<a class="text-muted" href="aboutus.html">About us</a>
+				</div>
+				<div class ="mr-1">
+					<a class="text-muted">&copy;All rights reserved</a>
+				</div>
+			</div>
+		</footer>		
+</div>
+		<script async src="js/controllers/redirIfNotAuth.js"></script>
+		<script defer src="js/controllers/logout.js"></script>
+		<script defer type="module" src="js/controllers/getTest.js"></script>
+	</body>
+</html>

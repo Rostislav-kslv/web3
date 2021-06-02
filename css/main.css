@@ -1,0 +1,9 @@
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.bg{
+	background-image: url(https://wallpaperaccess.com/full/782910.jpg);
+	background-size: cover;
+}
